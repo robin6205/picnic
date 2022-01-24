@@ -1,1 +1,3 @@
-# picnic
+# Picnic:
+
+Cheap food in bulk
