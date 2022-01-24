@@ -1,0 +1,24 @@
+{% extends "stores/base.html" %}
+{% block content %}
+        <h1>get a meal</h1>
+        <!-- Diplay first image from \media\uploads to screen -->
+        
+        {% for restaurant in restaurant_objects %}
+            
+            <div class="row">
+                <div class="column">
+                    {{ restaurant.restaurant_name }}
+                    <a href={{restaurant.store_page}}>
+                        <img alt="Store Page" src={{ restaurant.image.url }} style="width:100%" height="70">
+                    </a>
+                </div>
+                
+                <div class="column">
+                    {{ restaurant.restaurant_name }}
+                    <a href={{restaurant.store_page}}>
+                        <img alt="Store Page" src={{ restaurant.image.url }} style="width:100%" height="70">
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+{% endblock content %}
